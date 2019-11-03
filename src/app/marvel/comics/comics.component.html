@@ -1,0 +1,28 @@
+<div fxFlex fxLayout="column" fxLayoutGap="10px">
+    <div fxLayout="row wrap">
+        <div fxFlex="25" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" *ngFor="let comics  of comicsAny | async"
+            style="padding: 3px">
+            
+  <mat-card>
+    <img mat-card-image src="{{comics.thumbnail.path}}.{{comics.thumbnail.extension}}" alt="{{comics.title}}">
+    
+    <!-- Nome de todos os herois-->
+    <mat-card-title>
+        {{comics.title}}
+    </mat-card-title>
+
+    <!--Descrição dos herois-->
+   <mat-card-content>
+        {{comics.description}}
+    </mat-card-content> 
+
+    <!--Detalhes dos personagens-->
+    <mat-card-footer>
+        <a href="{{comics.urls[0].url}}" target="_blank" fxFlex mat-flat-button color="primary">Detalhes </a>
+    </mat-card-footer>
+
+</mat-card>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div fxLayout="row wrap" fxLayoutAlign="center" fxFlexAlign="center">
+    <h4>Selecione seus 3 heróis preferidos e encontraremos 5 histórias onde eles aparecem.</h4>
+    <button [disabled]="characterSelect.length !== 3" mat-raised-button color="primary" class="home-field"
+        (click)="save()" type="submit">
+        Pesquisar
+    </button>
+</div>
+<div fxLayout="row wrap">
+    <div fxFlex fxLayout="column" fxLayoutGap="10px">
+        <div fxLayout="row wrap">
+            <div fxFlex="25" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100"
+                *ngFor="let character  of allCharacters | async" style="padding: 3px">
+                <mat-card>
+                    <img mat-card-image src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}"
+                        alt="{{character.name}}">
+
+                    <!-- Nome de todos os herois-->
+                    <mat-card-title style="margin-left:-8px;">
+                        <mat-checkbox (change)="ngOnChange(character.id,$event)">{{character.name}}</mat-checkbox>
+                    </mat-card-title>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
