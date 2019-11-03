@@ -4,14 +4,22 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Business Description
 
-Buscar na API da [Marvel](https://developer.marvel.com/docs) os seus 3 herÛis favoritos e a partir deles listar 5 histÛrias nas quais eles apareÁam.
+Buscar na API da [Marvel](https://developer.marvel.com/docs) os seus 3 her√≥is favoritos e a partir deles listar 5 hist√≥rias nas quais eles apare√ßam.
 
-- Na tela [Home](http://localhost:4200/) o usuario informa os dados de acesso ao a API da Marvel. Caso n„o tenha acesso utilizar:
+- Na tela [Home](http://localhost:4200/) o usuario informa os dados de acesso ao a API da Marvel. Caso n√£o tenha acesso utilizar:
     - Public Key: 2639acddd5aa8e4ef572cb0e57d11fd2
     - Private Key: 45018b3d5fba590578695bf787c760467947f6fd
-- ApÛs informado os dados de acesso, o usuario ser· redirecionado para o link de [HerÛis](http://localhost:4200/herois);
-- O usuario deve selecionar o checkbox de seuas 3 herÛis favoritos, onde apÛs seleciona-los ser· liberado o bot„o pesquisar;
-- ApÛs clicar no bot„o ***Pesquisar*** o usuario ser· redirecionado para o link [HistÛrias](http://localhost:4200/historias), onde conter· o resultado.
+- Ap√≥s informado os dados de acesso, o usuario ser√° redirecionado para o link de [Her√≥is](http://localhost:4200/herois);
+- O usuario deve selecionar o checkbox de seuas 3 her√≥is favoritos, onde ap√≥s seleciona-los ser√° liberado o bot√£o pesquisar;
+- Ap√≥s clicar no bot√£o ***Pesquisar*** o usuario ser√° redirecionado para o link [Hist√≥rias](http://localhost:4200/historias), onde conter√° o resultado.
+
+## Install environment
+
+- Instalar [NPM](https://www.npmjs.com); vers√£o utilizada 6.12.0
+- Instalar Angular CLI
+  - $ npm install -g @angular/cli
+- Instalar Buid Angular
+  - $ npm install --save-dev @angular-devkit/build-angular
 
 ## Development server
 
@@ -21,8 +29,8 @@ Buscar na API da [Marvel](https://developer.marvel.com/docs) os seus 3 herÛis fa
 ## Build
 
 * Execute `ng build` para criar o projeto; 
-* Os artefatos de construÁ„o ser„o armazenados no diretÛrio `dist /`. 
-* Use o sinalizador `--prod` para uma construÁ„o de produÁ„o.
+* Os artefatos de constru√ß√£o ser√£o armazenados no diret√≥rio `dist /`. 
+* Use o sinalizador `--prod` para uma constru√ß√£o de produ√ß√£o.
 
 ## Running unit tests
 
